@@ -23,7 +23,7 @@
 int8_t
 parser_init(struct parser *parser, const char *filename)
 {
-    if (!parser) {
+    if (!parser || !filename) {
         return -1;
     }
 
